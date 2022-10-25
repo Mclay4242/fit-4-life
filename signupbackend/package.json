@@ -1,0 +1,15 @@
+{
+  "name": "signupbackend",
+  "version": "1.0.0",
+  "description": "Sign Up Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Mack Clay",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2"
+  }
+}
