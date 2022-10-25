@@ -1,11 +1,11 @@
 import React from 'react'
 import '../assets/CSS/styles.css'
-//import '../JS/index'
+//import '../JS/index.js'
 
 
 export default function Home() {
   return (
-   <React.Fragment>
+   <>
     
     <div class="hero">
       <div class="hero__container">
@@ -85,7 +85,7 @@ export default function Home() {
       </div>
     </div>
 
-   </React.Fragment>
+   </>
   )
 }
 

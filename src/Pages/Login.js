@@ -1,15 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../assets/CSS/membership.css'
-//import '../JS/index'
+//import '../JS/index.js'
 
 
 export default function Login() {
+  let navigate = useNavigate();
   return (
     <React.Fragment>
-        <div class="hero">
+      
+    <div class="hero">
       <div class="hero__container">
         <div class="container">
-          <form action="PHP/login.php" method="post" class="form" id="login">
+          <form action="/" method="post" class="form" id="login">
             <h1 class="form__title">Login</h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
@@ -38,16 +41,11 @@ export default function Login() {
             </p>
             <p class="form__text">
               <a class="form__link" href="./" id="linkCreateAccount"
-                >Don't have an account? Create account</a
-              >
+                >Don't have an account? Create account</a>
             </p>
           </form>
-          <form
-            action="PHP/register.php"
-            method="post"
-            class="form form--hidden"
-            id="createAccount"
-          >
+          <form action="" method="post" class="form form--hidden"
+            id="createAccount">
             <h1 class="form__title">Create Account</h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
@@ -90,11 +88,11 @@ export default function Login() {
               />
               <div class="form__input-error-message"></div>
             </div>
-            <button class="form__button" type="submit">Continue</button>
+            <button onClick={() => {
+              navigate('/'); }} class="form__button" type="submit">Continue</button>
             <p class="form__text">
               <a class="form__link" href="./" id="linkLogin"
-                >Already have an account? Sign in</a
-              >
+                >Already have an account? Sign in</a>
             </p>
           </form>
         </div>

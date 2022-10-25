@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import Home from "./Pages/Home";
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'

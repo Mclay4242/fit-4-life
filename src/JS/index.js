@@ -25,15 +25,15 @@ const moveNavbar = () => {
 window.addEventListener("scroll", moveNavbar);
 
 // error/sucess messages (login)
-// function setFormMessage(formElement, type, message) {
-//   const messageElement = formElement.querySelector(".form__message");
+function setFormMessage(formElement, type, message) {
+  const messageElement = formElement.querySelector(".form__message");
 
-//   messageElement.textContent = message;
-//   messageElement.classList.remove(
-//     "form__message--success, form__message--error"
-//   );
-//   messageElement.classList.add("form__message--${type}");
-// }
+  messageElement.textContent = message;
+  messageElement.classList.remove(
+    "form__message--success, form__message--error"
+  );
+  messageElement.classList.add("form__message--`type`");
+}
 
 // function setInputError(inputElement, message) {
 //   inputElement.classList.add("form__input--error");

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/CSS/contact.css'
-//import '../JS/index'
+//import '../JS/index.js'
 
 
 export default function Contact() {
