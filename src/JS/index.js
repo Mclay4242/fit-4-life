@@ -1,10 +1,8 @@
-
-
 // Display Mobile Menu
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
 
-const mobileMenu = () => {
+export const mobileMenu = () => {
   menu.classList.toggle("active");
   menuLinks.classList.toggle("active");
 };
@@ -14,7 +12,7 @@ menu.addEventListener("click", mobileMenu);
 const navbar = document.querySelector(".navbar");
 // const hero = document.querySelector(".hero");
 
-const moveNavbar = () => {
+export const moveNavbar = () => {
   if (window.scrollY > 500) {
     navbar.classList.add("active");
   } else {
