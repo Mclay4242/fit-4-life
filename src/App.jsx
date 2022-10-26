@@ -112,8 +112,8 @@ class App extends Component {
           <Route path="/about" element={<About />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          {/* <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} /> */}
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
         <div class="footer">

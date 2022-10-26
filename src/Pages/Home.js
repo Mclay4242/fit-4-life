@@ -1,6 +1,8 @@
 import React from "react";
 import HomeCSS from "../assets/CSS/styles.module.css";
 //import '../JS/index.js'
+import workout1 from "../assets/img/Workout1.jpeg"
+import workout2 from "../assets/img/Workout2.jpeg"
 
 export default function Home() {
   return (
@@ -14,8 +16,8 @@ export default function Home() {
       <div class={HomeCSS.about}>
         <h1>This is some about info</h1>
         <div class={HomeCSS.about__container}>
-          <img class="workout1" src="img/Workout1.jpeg" alt="" />
-          <div class="about__description">
+          <img class={HomeCSS.workout1} src={workout1} alt="" />
+          <div class={HomeCSS.about__description}>
             <p>
               Thus turns, and thance to sleep to beary life; for that pangs and
               by a sleep: perchance of return not ther in the to oth who would
@@ -29,8 +31,8 @@ export default function Home() {
           </div>
         </div>
         <h1>This is some more about info</h1>
-        <div class="about__container2">
-          <div class="about__description2">
+        <div class={HomeCSS.about__container2}>
+          <div class={HomeCSS.about__description2}>
             <p>
               Humand the devels of quality, involvement to commitment becognize
               the market. As timal struct designed ass cost efficies, systems a
@@ -42,29 +44,29 @@ export default function Home() {
               in to the competitiveness. To becognized the competitiven
             </p>
           </div>
-          <img class="workout2" src="img/Workout2.jpeg" alt="" />
+          <img class={HomeCSS.workout2} src={workout2} alt="" />
         </div>
       </div>
 
-      <div class="location">
+      <div class={HomeCSS.location}>
         <h1>Location</h1>
-        <div class="location__info">
-          <div class="location__description">
+        <div class={HomeCSS.location__info}>
+          <div class={HomeCSS.location__description}>
             <p>2635 North Main St</p>
             <p>Walnut Creek CA 94954</p>
-            <p class="mi">Membership Info:</p>
+            <p class={HomeCSS.mi}>Membership Info:</p>
             <p>(925) 280-8211</p>
             <p>wcinfo@21minutefitness.com</p>
           </div>
-          <div class="location__hoo">
-            <p class="hoo">Hours of Operation:</p>
+          <div class={HomeCSS.location__hoo}>
+            <p class={HomeCSS.hoo}>Hours of Operation:</p>
             <p>Mon-Fri 6am – 8pm</p>
             <p>Sat 8am – 3pm</p>
             <p>Sun Closed</p>
           </div>
         </div>
       </div>
-      <div class="map__container">
+      <div class={HomeCSS.map__container}>
         <iframe
           title="myFrame"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12590.491412949488!2d-122.07185566241779!3d37.915877204058944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561eb7c444b0d%3A0xd27aad45faee6a57!2s21%20Minute%20Fitness!5e0!3m2!1sen!2sus!4v1665614795474!5m2!1sen!2sus"
@@ -77,8 +79,8 @@ export default function Home() {
         ></iframe>
       </div>
 
-      <div class="btn__container">
-        <div class="main__btn">
+      <div class={HomeCSS.btn__container}>
+        <div class={HomeCSS.main__btn}>
           <a href="membership.html"> Make an Appointment</a>
         </div>
       </div>
